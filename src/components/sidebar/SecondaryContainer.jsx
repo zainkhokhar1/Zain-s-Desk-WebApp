@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { MdAttachMoney } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const SecondaryContainer = ({setSelected, selected}) => {
+
+  const [path, setPath] = useState(window.location.pathname);
+  
+    useEffect(() => {
+      setPath(window.location.pathname);
+    }, [window.location.pathname]);
+    
   const options2 = [
     {
       name: "Notifications",
@@ -31,7 +38,7 @@ const SecondaryContainer = ({setSelected, selected}) => {
             to={singleOption.path}
             key={singleOption.name + index}
             className={`duration-200 cursor-pointer flex items-center w-full rounded-lg px-3 py-[10px] ${
-              selected === optionIndex
+              singleOption.path === path
                 ? "bg-[#FEFEFE] text-[#112001] font-medium opacity-100"
                 : "bg-transparent hover:bg-[#FEFEFE]/5 opacity-50 hover:opacity-100"
             } gap-2 p-2`}

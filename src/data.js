@@ -58,6 +58,449 @@ export const passwordVaultData = [
   }
 ];
 
+export const subj_PageData = [
+  {
+    "id": 1,
+    "title": "Operating System",
+    "type": "Mids",
+    "status": "Remaining",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "23 December 2024",
+    "stats": {
+      "images": 32,
+      "pdfs": 16
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Introduction", "pages": 18},
+      {"name": "Chapter 1", "pages": 27},
+      {"name": "Chapter 2", "pages": 29}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning",
+    "type": "Mids",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/artificial-intelligence-illustration_23-2149239271.jpg",
+    "lastUpdated": "10 July 2024",
+    "stats": {
+      "images": 46,
+      "pdfs": 6
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Introduction", "pages": 30},
+      {"name": "Conclusion", "pages": 30},
+      {"name": "Chapter 2", "pages": 10},
+      {"name": "Chapter 2", "pages": 23}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cyber Security",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/internet-network-technology-background_1017-27428.jpg",
+    "lastUpdated": "30 November 2024",
+    "stats": {
+      "images": 28,
+      "pdfs": 16
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 22},
+      {"name": "Chapter 2", "pages": 25},
+      {"name": "Conclusion", "pages": 15},
+      {"name": "Advanced Topics", "pages": 27},
+      {"name": "Chapter 2", "pages": 17}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Parallel Computing",
+    "type": "Finals",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "15 May 2024",
+    "stats": {
+      "images": 29,
+      "pdfs": 18
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 18},
+      {"name": "Conclusion", "pages": 16},
+      {"name": "Chapter 2", "pages": 12}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Data Structures",
+    "type": "Mids",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "16 January 2025",
+    "stats": {
+      "images": 25,
+      "pdfs": 13
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 18},
+      {"name": "Chapter 2", "pages": 24},
+      {"name": "Advanced Topics", "pages": 22}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Database Systems",
+    "type": "Mids",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "22 February 2025",
+    "stats": {
+      "images": 40,
+      "pdfs": 6
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 20},
+      {"name": "Chapter 2", "pages": 10}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Artificial Intelligence",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/artificial-intelligence-illustration_23-2149239271.jpg",
+    "lastUpdated": "29 June 2024",
+    "stats": {
+      "images": 39,
+      "pdfs": 14
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 28},
+      {"name": "Chapter 1", "pages": 22},
+      {"name": "Advanced Topics", "pages": 30}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cloud Computing",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "30 September 2024",
+    "stats": {
+      "images": 47,
+      "pdfs": 9
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Introduction", "pages": 22},
+      {"name": "Chapter 1", "pages": 25}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Blockchain Basics",
+    "type": "Mids",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/cartoon-math-concept-background_23-2148164881.jpg",
+    "lastUpdated": "20 September 2024",
+    "stats": {
+      "images": 38,
+      "pdfs": 12
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 19},
+      {"name": "Advanced Topics", "pages": 21}
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Cyber Security",
+    "type": "Finals",
+    "status": "Remaining",
+    "image": "https://img.freepik.com/free-vector/internet-network-technology-background_1017-27428.jpg",
+    "lastUpdated": "28 November 2024",
+    "stats": {
+      "images": 57,
+      "pdfs": 9
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 22},
+      {"name": "Chapter 1", "pages": 24}
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Software Engineering",
+    "type": "Mids",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "21 May 2024",
+    "stats": {
+      "images": 39,
+      "pdfs": 9
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Introduction", "pages": 27},
+      {"name": "Introduction", "pages": 26},
+      {"name": "Chapter 2", "pages": 18}
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Operating System",
+    "type": "Finals",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "18 August 2024",
+    "stats": {
+      "images": 36,
+      "pdfs": 11
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Conclusion", "pages": 20},
+      {"name": "Chapter 1", "pages": 24},
+      {"name": "Chapter 2", "pages": 22}
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Quantum Computing",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "10 October 2024",
+    "stats": {
+      "images": 51,
+      "pdfs": 10
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Introduction", "pages": 28},
+      {"name": "Chapter 2", "pages": 18}
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Artificial Intelligence",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/artificial-intelligence-illustration_23-2149239271.jpg",
+    "lastUpdated": "17 September 2024",
+    "stats": {
+      "images": 48,
+      "pdfs": 7
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 29},
+      {"name": "Conclusion", "pages": 30}
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Software Engineering",
+    "type": "Finals",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "03 June 2024",
+    "stats": {
+      "images": 42,
+      "pdfs": 12
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Introduction", "pages": 26},
+      {"name": "Chapter 1", "pages": 24},
+      {"name": "Conclusion", "pages": 18}
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Cloud Computing",
+    "type": "Mids",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "02 April 2024",
+    "stats": {
+      "images": 27,
+      "pdfs": 14
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Advanced Topics", "pages": 23},
+      {"name": "Conclusion", "pages": 20},
+      {"name": "Introduction", "pages": 28}
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Blockchain Basics",
+    "type": "Mids",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "01 October 2024",
+    "stats": {
+      "images": 33,
+      "pdfs": 9
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Conclusion", "pages": 28},
+      {"name": "Chapter 1", "pages": 22}
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Parallel Computing",
+    "type": "Mids",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "24 September 2024",
+    "stats": {
+      "images": 39,
+      "pdfs": 8
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 20},
+      {"name": "Chapter 1", "pages": 17}
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Data Structures",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "11 June 2024",
+    "stats": {
+      "images": 40,
+      "pdfs": 12
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Conclusion", "pages": 25},
+      {"name": "Introduction", "pages": 28}
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Data Structures",
+    "type": "Mids",
+    "status": "Remaining",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "06 December 2024",
+    "stats": {
+      "images": 31,
+      "pdfs": 8
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Advanced Topics", "pages": 26},
+      {"name": "Introduction", "pages": 25}
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Quantum Computing",
+    "type": "Mids",
+    "status": "Remaining",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "24 January 2025",
+    "stats": {
+      "images": 40,
+      "pdfs": 7
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 26},
+      {"name": "Introduction", "pages": 23}
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Artificial Intelligence",
+    "type": "Finals",
+    "status": "Remaining",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "10 March 2024",
+    "stats": {
+      "images": 36,
+      "pdfs": 10
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 1", "pages": 27},
+      {"name": "Conclusion", "pages": 22}
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Operating System",
+    "type": "Mids",
+    "status": "Completed",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "29 October 2024",
+    "stats": {
+      "images": 37,
+      "pdfs": 11
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 24},
+      {"name": "Introduction", "pages": 20}
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Quantum Computing",
+    "type": "Finals",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-553.jpg",
+    "lastUpdated": "13 April 2025",
+    "stats": {
+      "images": 34,
+      "pdfs": 6
+    },
+    "priority": "Important",
+    "chapters": [
+      {"name": "Chapter 2", "pages": 30},
+      {"name": "Chapter 2", "pages": 22}
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Software Engineering",
+    "type": "Mids",
+    "status": "Pending",
+    "image": "https://img.freepik.com/free-vector/abstract-algorithm-concept_23-2148618645.jpg",
+    "lastUpdated": "05 February 2025",
+    "stats": {
+      "images": 45,
+      "pdfs": 13
+    },
+    "priority": "Normal",
+    "chapters": [
+      {"name": "Introduction", "pages": 30},
+      {"name": "Chapter 1", "pages": 24},
+      {"name": "Conclusion", "pages": 20}
+    ]
+  }
+]
+
+
 export const subjectCardData = [
   {
     id: 1,
