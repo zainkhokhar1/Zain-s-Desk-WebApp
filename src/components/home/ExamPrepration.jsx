@@ -69,11 +69,22 @@ const ExamPrepration = () => {
         </div>
 
         {/* cards container */}
-        <ScrollContainer className="flex flex-row gap-3 mt-4">
-          {filteredSubjects.map((subject) => (
-            <SubjectCard key={subject.id} {...subject} />
-          ))}
-        </ScrollContainer>
+        {filteredSubjects.length > 0 ? (
+          <ScrollContainer className="flex flex-row gap-3 mt-4">
+            {filteredSubjects.map((subject) => (
+              <SubjectCard key={subject.id} {...subject} />
+            ))}
+          </ScrollContainer>
+        ) : (
+          <div className="flex flex-col items-center justify-center h-[90%]">
+            <img 
+              src="/no-data.png" 
+              alt="No Data Available" 
+              className="size-72 object-contain opacity-50"
+            />
+            <p className="text-white/50 text-lg mt-1">No subjects available</p>
+          </div>
+        )}
       </div>
     </div>
   );

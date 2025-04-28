@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IoFilterOutline } from "react-icons/io5";
 import { HiMiniWallet } from "react-icons/hi2";
 import { FaHeart, FaClock } from "react-icons/fa";
 import PasswordCard from "./PasswordCard";
 import PasswordTable from "./PasswordTable";
+import passwordContext from "../../context/CreatePasswordContext";
+import Popup from "../password-vault/Popup";
 
 const PasswordVaultContainer = () => {
+  const { createPassword, setCreatePassword } = useContext(passwordContext);
+
   const passwordCardsData = [
     {
       icon: <HiMiniWallet className="text-xl" />,
@@ -27,6 +31,7 @@ const PasswordVaultContainer = () => {
     },
     {
       variant: "add-new", // special card flag
+      onClick: () =>  setCreatePassword(!createPassword),
     },
   ];
 
@@ -62,15 +67,17 @@ const PasswordVaultContainer = () => {
             count={card.count}
             subtitle={card.subtitle}
             variant={card.variant}
+            onClick={card.onClick}
           />
         ))}
       </div>
 
       {/* Table */}
-      <div className='w-full px-2'>
-        <h2 className='text-lg pt-5 pb-3 font-semibold'>Recent Passwords</h2>
+      <div className="w-full px-2">
+        <h2 className="text-lg pt-5 pb-3 font-semibold">Recent Passwords</h2>
         <PasswordTable />
       </div>
+      <Popup />
     </div>
   );
 };

@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import LinkProvider from "./context/CreateLinkProvider.jsx";
+import PasswordProvider from "./context/CreatePasswordProvider.jsx";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <LinkProvider>
+      <PasswordProvider>
+        <App />
+      </PasswordProvider>
+    </LinkProvider>
+  </StrictMode>
+);

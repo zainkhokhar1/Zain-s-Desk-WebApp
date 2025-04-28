@@ -27,8 +27,8 @@ const Clock = () => {
 
     const TimeBox = ({ value, label }) => (
         <div className="flex flex-col items-center">
-            <div className="bg-[#1C1C1E] size-12 rounded-xl flex items-center justify-center border-[1px] border-[#2C2C2C]">
-                <span className="text-[#FEFEFE] text-3xl font-bold">{value}</span>
+            <div className="bg-[#1C1C1E] size-10 rounded-xl flex items-center justify-center border-[1px] border-[#2C2C2C]">
+                <span className="text-[#FEFEFE] text-2xl font-semibold">{value}</span>
             </div>
             {/* <span className="text-[#F0F0F0] mt-2 text-sm opacity-50">{label}</span> */}
         </div>

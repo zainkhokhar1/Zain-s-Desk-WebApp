@@ -8,6 +8,7 @@ import PasswordVault from "./screens/PasswordVault";
 import Todos from "./screens/Todos";
 import Notifications from "./screens/Notifications";
 import ExpenseManagement from "./screens/ExpenseManagement";
+import LinkProvider from "./context/CreateLinkProvider";
 
 function App() {
   return (

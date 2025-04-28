@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { IoAddOutline, IoSearchOutline } from "react-icons/io5";
 import LinkCard from "./LinkCard"; 
 import ScrollContainer from "react-indiana-drag-scroll";
+import linkContext from "../../context/CreateContext";
+import Popup from "../quick-links/Popup";
 
 const QuickLinks = () => {
   const [options, setOptions] = useState(1);
+  const {createLink,setCreateLink} = useContext(linkContext);
 
   const data = {
     social: [
@@ -91,7 +94,7 @@ const QuickLinks = () => {
           </span>
 
           {/* add button */}
-          <span className="p-1 rounded-full bg-white/5 hover:bg-white/10 cursor-pointer border border-white/10 duration-200">
+          <span className="p-1 rounded-full bg-white/5 hover:bg-white/10 cursor-pointer border border-white/10 duration-200" onClick={() => setCreateLink(!createLink)}>
             <IoAddOutline className="text-xl text-white/70 group-hover:text-white duration-100" />
           </span>
         </div>
@@ -127,6 +130,7 @@ const QuickLinks = () => {
               })}
         </div>
       </ScrollContainer>
+      <Popup />
     </div>
   );
 };
