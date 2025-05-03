@@ -500,6 +500,123 @@ export const subj_PageData = [
   }
 ]
 
+// dummyChapterData.js
+const dummyChapters = [
+  {
+    id: 1,
+    title: "Chapter 1: Motion",
+    notesCount: 10,
+    updated: "2 days ago",
+    progress: 70,
+    colorFrom: "from-indigo-400/20",
+    colorTo: "to-blue-400/10",
+    bookmarked: true,
+    completed: false,
+  },
+  {
+    id: 2,
+    title: "Chapter 2: Light",
+    notesCount: 5,
+    updated: "1 day ago",
+    progress: 30,
+    colorFrom: "from-yellow-400/20",
+    colorTo: "to-red-400/10",
+    bookmarked: false,
+    completed: false,
+  },
+  {
+    id: 3,
+    title: "Chapter 3: Electricity",
+    notesCount: 12,
+    updated: "3 days ago",
+    progress: 90,
+    colorFrom: "from-green-400/20",
+    colorTo: "to-teal-400/10",
+    bookmarked: true,
+    completed: true,
+  },
+  {
+    id: 4,
+    title: "Chapter 4: Sound",
+    notesCount: 7,
+    updated: "Today",
+    progress: 40,
+    colorFrom: "from-pink-400/20",
+    colorTo: "to-purple-400/10",
+    bookmarked: false,
+    completed: false,
+  },
+  {
+    id: 5,
+    title: "Chapter 5: Heat",
+    notesCount: 8,
+    updated: "Yesterday",
+    progress: 60,
+    colorFrom: "from-red-400/20",
+    colorTo: "to-orange-400/10",
+    bookmarked: true,
+    completed: false,
+  },
+  {
+    id: 6,
+    title: "Chapter 6: Gravitation",
+    notesCount: 6,
+    updated: "4 days ago",
+    progress: 80,
+    colorFrom: "from-cyan-400/20",
+    colorTo: "to-indigo-400/10",
+    bookmarked: false,
+    completed: true,
+  },
+  {
+    id: 7,
+    title: "Chapter 7: Refraction",
+    notesCount: 9,
+    updated: "5 days ago",
+    progress: 50,
+    colorFrom: "from-orange-400/20",
+    colorTo: "to-pink-400/10",
+    bookmarked: true,
+    completed: false,
+  },
+  {
+    id: 8,
+    title: "Chapter 8: Work & Energy",
+    notesCount: 11,
+    updated: "6 days ago",
+    progress: 65,
+    colorFrom: "from-sky-400/20",
+    colorTo: "to-blue-500/10",
+    bookmarked: false,
+    completed: true,
+  },
+  {
+    id: 9,
+    title: "Chapter 9: Magnetism",
+    notesCount: 4,
+    updated: "1 week ago",
+    progress: 25,
+    colorFrom: "from-fuchsia-400/20",
+    colorTo: "to-violet-400/10",
+    bookmarked: false,
+    completed: false,
+  },
+  {
+    id: 10,
+    title: "Chapter 10: Nuclear Physics",
+    notesCount: 13,
+    updated: "2 weeks ago",
+    progress: 100,
+    colorFrom: "from-lime-400/20",
+    colorTo: "to-green-400/10",
+    bookmarked: true,
+    completed: true,
+  },
+];
+
+export default dummyChapters;
+
+
 
 export const subjectCardData = [
   {

@@ -9,12 +9,13 @@ import Todos from "./screens/Todos";
 import Notifications from "./screens/Notifications";
 import ExpenseManagement from "./screens/ExpenseManagement";
 import LinkProvider from "./context/CreateLinkProvider";
+import Chapters from "./screens/Chapters";
 
 function App() {
   return (
     <div className="bg-black pb-2 overflow-x-hidden text-[#F0F0F0]">
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/exam-preparation" element={<ExamPreparation />} />
@@ -23,6 +24,7 @@ function App() {
           <Route path="/todos" element={<Todos />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/expense-management" element={<ExpenseManagement />} />
+          <Route path="/:subject/chapters" element={<Chapters />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>
