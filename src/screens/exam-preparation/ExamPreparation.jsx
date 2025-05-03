@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import ExamCard from "../components/ExamCard";
-import { subj_PageData } from "../data";
-import examImage from '../../public/10473220-removebg-preview.png';
+import Navbar from "../../components/Navbar";
+import ExamCard from "../../components/ExamCard";
+import { subj_PageData } from "../../data";
+import examImage from "../../../public/10473220-removebg-preview.png";
 import { IoFilterOutline } from "react-icons/io5";
 
 const ExamPreparation = () => {
@@ -15,19 +14,20 @@ const ExamPreparation = () => {
     "Mids",
     "Finals",
     "Important",
-    "Completed"
+    "Completed",
   ];
 
   // Filter subjects based on selected filter and search query
-  const filteredSubjects = subj_PageData.filter(subject => {
-    const matchesFilter = 
+  const filteredSubjects = subj_PageData.filter((subject) => {
+    const matchesFilter =
       selectedFilter === "All Subjects" ||
       subject.type === selectedFilter ||
       subject.status === selectedFilter ||
       subject.priority === selectedFilter;
 
-    const matchesSearch = 
-      subject.title.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = subject.title
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
 
     return matchesFilter && matchesSearch;
   });
@@ -101,7 +101,7 @@ const ExamPreparation = () => {
 
         {/* Grid of cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mb-4">
-          {filteredSubjects.map(subject => (
+          {filteredSubjects.map((subject) => (
             <ExamCard key={subject.id} {...subject} />
           ))}
         </div>

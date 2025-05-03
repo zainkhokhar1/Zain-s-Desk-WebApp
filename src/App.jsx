@@ -2,14 +2,15 @@ import Navbar from "./components/sidebar/SideBar";
 import Home from "./screens/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Settings from "./screens/Settings";
-import ExamPreparation from "./screens/ExamPreparation";
+import ExamPreparation from "./screens/exam-preparation/ExamPreparation";
 import QuickLinks from "./screens/QuickLinks";
 import PasswordVault from "./screens/PasswordVault";
 import Todos from "./screens/Todos";
 import Notifications from "./screens/Notifications";
 import ExpenseManagement from "./screens/ExpenseManagement";
 import LinkProvider from "./context/CreateLinkProvider";
-import Chapters from "./screens/Chapters";
+import Chapters from "./screens/exam-preparation/Chapters";
+import SingleChapterPreview from "./screens/exam-preparation/SingleChapterPreview";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/expense-management" element={<ExpenseManagement />} />
           <Route path="/:subject/chapters" element={<Chapters />} />
+          <Route path="/:subject/:chapter" element={<SingleChapterPreview />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>

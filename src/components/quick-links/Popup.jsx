@@ -18,7 +18,7 @@ const Popup = () => {
   return (
     <>
       {createLink && (
-        <div className=" rounded-lg size-96 h-[490px] fixed left-[500px] top-24 bg-[#09090B]/40 backdrop-blur-xl text-white p-4 text-start border-2 border-white/10 py-5 z-50 shadow-lg shadow-white/5">
+        <div className=" rounded-lg size-96 h-[490px] fixed left-[500px] top-10 bg-[#09090B]/40 backdrop-blur-xl text-white p-4 text-start border-2 border-white/10 py-5 z-50 shadow-lg shadow-white/5">
           <h1 className="text-xl font-semibold pb-1">
             Create Quick Access Link
           </h1>
