@@ -1,14 +1,17 @@
-import React from "react";
 
-const ImageContainer = ({
-  img = "https://a4agriculture.in/wp-content/uploads/2024/01/Handwritten-2-short-notes-by-ashish-ramteke_page_1.webp",
-}) => {
+
+const ImageContainer = ({ img, isFullScreen }) => {
+
   return (
-    <div className="w-full h-full rounded-xl overflow-hidden">
+    <div
+      className={`${
+        isFullScreen ? "h-screen w-screen" : "h-[479px] w-full"
+      } flex justify-center items-center bg-[#1f1f1f]/70 rounded-lg overflow-hidden`}
+    >
       <img
         src={img}
-        alt="img"
-        className="w-full h-full object-contain rounded-xl"
+        alt="Gallery"
+        className="object-contain w-full h-full transition-all duration-300"
       />
     </div>
   );
