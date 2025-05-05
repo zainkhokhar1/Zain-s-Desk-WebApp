@@ -83,7 +83,7 @@ const ExamCard = ({
       <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
         <div className="text-xs text-white/70">Last Updated: {lastUpdated}</div>
         <Link
-          to={`/${title}/chapters`}
+          to={`/exam-preparation/${title}/chapters`}
           className="px-6 py-1 bg-white text-black rounded-lg hover:bg-white/90 transition-colors"
         >
           View

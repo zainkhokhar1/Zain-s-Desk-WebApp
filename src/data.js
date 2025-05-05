@@ -1,4 +1,155 @@
 
+export const dummyContent = {
+  extractedText: `
+    Chapter 1: Introduction to Computer Science
+    
+    Key Points:
+    • Definition of Computer Science
+    • Basic computer architecture
+    • Introduction to programming concepts
+    • History of computing
+    
+    Notes:
+    Computer Science is the study of computers and computational systems.
+    Key Points:
+    • Definition of Computer Science
+    • Basic computer architecture
+    • Introduction to programming concepts
+    • History of computing
+    
+    Notes:
+    Computer Science is the study of computers and computational systems
+    Key Points:
+    • Definition of Computer Science
+    • Basic computer architecture
+    • Introduction to programming concepts
+    • History of computing
+    
+    Notes:
+    Computer Science is the study of computers and computational systems.
+    Key Points:
+    • Definition of Computer Science
+    • Basic computer architecture
+    • Introduction to programming concepts
+    • History of computing
+    
+    Notes:
+    Computer Science is the study of computers and computational systems.
+    Key Points:
+    • Definition of Computer Science
+    • Basic computer architecture
+    • Introduction to programming concepts
+    • History of computing
+    
+    Notes:
+    Computer Science is the study of computers and computational systems.
+  `,
+  enhancedNotes: [
+    {
+      title: "Expanded Concepts",
+      content:
+        "Computer Science encompasses both theoretical and practical aspects of computation, Computer Science encompasses both theoretical and practical aspects of computation, Computer Science encompasses both theoretical and practical aspects of computation, Computer Science encompasses both theoretical and practical aspects of computation",
+    },
+    {
+      title: "Key Terminology",
+      content:
+        "Algorithm: A step-by-step procedure for calculations\nData Structure: A format for organizing and storing data",
+    },
+    {
+      title: "Additional Resources",
+      content:
+        "Consider exploring: Data Structures, Algorithms, Programming Languages",
+    },
+  ],
+  youtubeSuggestions: [
+    {
+      title: "Introduction to Computer Science - Harvard CS50",
+      channel: "CS50",
+      duration: "2:15:30",
+      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
+    },
+    {
+      title: "Introduction to Computer Science - Harvard CS50",
+      channel: "CS50",
+      duration: "2:15:30",
+      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
+    },
+    {
+      title: "Introduction to Computer Science - Harvard CS50",
+      channel: "CS50",
+      duration: "2:15:30",
+      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
+    },
+    {
+      title: "Introduction to Computer Science - Harvard CS50",
+      channel: "CS50",
+      duration: "2:15:30",
+      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
+    },
+    {
+      title: "How Computers Work: What Makes a Computer, a Computer?",
+      channel: "Code.org",
+      duration: "1:15:20",
+      thumbnail: "https://img.youtube.com/vi/mCq8-xTH7jA/0.jpg",
+    },
+    {
+      title: "Basics of Programming - Complete Tutorial",
+      channel: "freeCodeCamp.org",
+      duration: "45:30",
+      thumbnail: "https://img.youtube.com/vi/zOjov-2OZ0E/0.jpg",
+    },
+  ],
+};
+
+export  const imageData = [
+    { id: 1, imageUrl: "https://i.redd.it/q5uidlp6u6j61.jpg" },
+    {
+      id: 2,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW0oJN7DU26KYMAyWdHuJ5-EU6RxGCfd8M-6-5JIlBhic6oWOg9ZJvvPyvL7ecgvCn9g&usqp=CAU",
+    },
+    {
+      id: 3,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTruXsr7QSmESYNjOJ6J66YPRr51Yrej_trlBk0zd2LRbWfMvBXuUUwHmAjUKYJR0SbX4&usqp=CAU",
+    },
+    {
+      id: 4,
+      imageUrl:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/288373191/original/b1b4aeff9caf88290621ee4cdfc70fd5c1f962b4/create-handwritten-note-letters-cards-and-assignments-in-beautiful-handwriting.jpg",
+    },
+    {
+      id: 5,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMcVQceImwZ8JYf8aNQBJCCuASDZFXlJ-fc6LTmnqUO_quWrZ-42OBP7ekXo68RMSudk&usqp=CAU",
+    },
+    {
+      id: 6,
+      imageUrl:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/287258513/original/4a6921c67e19052fa76bde6bf8c30769e112cf3c/write-any-thing-for-you-in-my-beautiful-handwriting.jpeg",
+    },
+    {
+      id: 7,
+      imageUrl:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/338611016/original/d21a443439ca9bec60f609a70e61e47c90c21fce/do-handwriting-notes-and-letters.jpg",
+    },
+    {
+      id: 8,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGeGn_IY1Lrm-3IovpVCP63AU-6AsF9Oo-ZQ3BG8bwPOrrbrdBH9_HOzvMildoNAqmmQA&usqp=CAU",
+    },
+    {
+      id: 9,
+      imageUrl:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/336620685/original/d02ae2d8d619c504fb37c377b69e240d8559fd7a/do-handwriting-notes-and-letters.jpg",
+    },
+    {
+      id: 10,
+      imageUrl:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/286057779/original/e35b2ccf543b350b95a12a4c81b4c0a8708a1f31/do-handwriting-notes-and-letters.jpg",
+    },
+  ];
+
 export const passwordVaultData = [
   {
     id: 1,

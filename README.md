@@ -32,10 +32,20 @@ If you are developing a production application, we recommend using TypeScript wi
 
  <!-- Features to be added on the single chapter preview page -->
  Make the bookmark as saved and important as a separate thing in all the exam sections
- 1. Bookmark (option for both the chapter and the image to be bookmarked).
- 2. Mark as done (option for both the image and the chapter to be marked as bookmark (Important)).
- 3. Option to show the Bookmark images first and then the others and also marks as done option and when user selects this then it shows the done images first then the other images (Bookmark means important)
+ <!-- 1. Bookmark (option for both the chapter and the image to be bookmarked). -->
+ <!-- 2. Mark as done (option for both the image and the chapter to be marked as bookmark (Important)). -->
+ <!-- 3. Option to show the Bookmark images first and then the others and also marks as done option and when user selects this then it shows the done images first then the other images (Bookmark means important) -->
  4. Option to share the chapter.
- 5. Option to delete a specific image of the chapter.
- 6. On the image the user must have the full screen option, Zoom image option and save to local device option.
+ <!-- 5. Option to delete a specific image of the chapter. -->
+ <!-- 6. On the image the user must have the full screen option, Zoom image option and save to local device option. -->
  7. Show the exact details of the images in the text format.
+
+ <!-- Tasks for today must done -->
+ 1. Add the popups like 
+ -> ARE YOU SURE TO DELETE THE CHAPTER? || Image 
+  
+ --> Think about the edit section what to show on this?
+ Options for now -> 
+ 1. Edit the name of the chapter.
+ 2. Add a picture for the chapter.
+ 3. Save buttonn and cancel button.

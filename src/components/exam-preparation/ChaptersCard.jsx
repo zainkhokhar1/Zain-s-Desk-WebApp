@@ -55,7 +55,7 @@ const ChaptersCard = ({
 
       {/* Action Buttons */}
       <div className="flex justify-between gap-2 mt-4">
-        <Link to={`/:${title}/:${title}`} className="flex-1 bg-white text-black text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/90 text-center">
+        <Link to={`/exam-preparation/:${title}/:${title}`} className="flex-1 bg-white text-black text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/90 text-center">
           View
         </Link>
         <button className="flex-1 bg-white/10 text-white text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/20">

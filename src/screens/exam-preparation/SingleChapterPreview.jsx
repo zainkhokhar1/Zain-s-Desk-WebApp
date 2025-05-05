@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import Navbar from "../../components/Navbar";
 import {
-  MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
   MdDone,
   MdStar,
@@ -17,82 +16,16 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { BiFullscreen } from "react-icons/bi";
 import { RxExitFullScreen } from "react-icons/rx";
 import { VscBookmark } from "react-icons/vsc";
-import { FaCheckCircle, FaHeart } from "react-icons/fa";
+import { FaCheckCircle, FaChevronLeft, FaHeart } from "react-icons/fa";
 import { FaBookmark } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import dummyChapters from "../../data";
 import ChaptersCard from "../../components/exam-preparation/ChaptersCard";
-
-// Add this dummy data near your other const declarations at the top
-const dummyContent = {
-  extractedText: `
-    Chapter 1: Introduction to Computer Science
-    
-    Key Points:
-    • Definition of Computer Science
-    • Basic computer architecture
-    • Introduction to programming concepts
-    • History of computing
-    
-    Notes:
-    Computer Science is the study of computers and computational systems...
-  `,
-  enhancedNotes: [
-    {
-      title: "Expanded Concepts",
-      content:
-        "Computer Science encompasses both theoretical and practical aspects of computation...",
-    },
-    {
-      title: "Key Terminology",
-      content:
-        "Algorithm: A step-by-step procedure for calculations\nData Structure: A format for organizing and storing data",
-    },
-    {
-      title: "Additional Resources",
-      content:
-        "Consider exploring: Data Structures, Algorithms, Programming Languages",
-    },
-  ],
-  youtubeSuggestions: [
-    {
-      title: "Introduction to Computer Science - Harvard CS50",
-      channel: "CS50",
-      duration: "2:15:30",
-      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
-    },
-    {
-      title: "Introduction to Computer Science - Harvard CS50",
-      channel: "CS50",
-      duration: "2:15:30",
-      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
-    },
-    {
-      title: "Introduction to Computer Science - Harvard CS50",
-      channel: "CS50",
-      duration: "2:15:30",
-      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
-    },
-    {
-      title: "Introduction to Computer Science - Harvard CS50",
-      channel: "CS50",
-      duration: "2:15:30",
-      thumbnail: "https://img.youtube.com/vi/8mAITcNt710/0.jpg",
-    },
-    {
-      title: "How Computers Work: What Makes a Computer, a Computer?",
-      channel: "Code.org",
-      duration: "1:15:20",
-      thumbnail: "https://img.youtube.com/vi/mCq8-xTH7jA/0.jpg",
-    },
-    {
-      title: "Basics of Programming - Complete Tutorial",
-      channel: "freeCodeCamp.org",
-      duration: "45:30",
-      thumbnail: "https://img.youtube.com/vi/zOjov-2OZ0E/0.jpg",
-    },
-  ],
-};
+import { dummyContent } from "../../data";
+import { imageData } from "../../data";
+import YoutubeCard from "../../components/exam-preparation/YoutubeCard";
+import EditChapterPopup from "../../components/exam-preparation/EditChapterPopup";
+import DeletionPopup from "../../components/exam-preparation/DeletionPopup";
 
 // 3 next chapters to show on the container
 const nextChapters = dummyChapters.slice(1, 4);
@@ -102,54 +35,6 @@ const SingleChapterPreview = () => {
   // id of the current opened image
   const [currentIndex, setCurrentIndex] = useState(0);
   // making images fack data
-  const imageData = [
-    { id: 1, imageUrl: "https://i.redd.it/q5uidlp6u6j61.jpg" },
-    {
-      id: 2,
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW0oJN7DU26KYMAyWdHuJ5-EU6RxGCfd8M-6-5JIlBhic6oWOg9ZJvvPyvL7ecgvCn9g&usqp=CAU",
-    },
-    {
-      id: 3,
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTruXsr7QSmESYNjOJ6J66YPRr51Yrej_trlBk0zd2LRbWfMvBXuUUwHmAjUKYJR0SbX4&usqp=CAU",
-    },
-    {
-      id: 4,
-      imageUrl:
-        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/288373191/original/b1b4aeff9caf88290621ee4cdfc70fd5c1f962b4/create-handwritten-note-letters-cards-and-assignments-in-beautiful-handwriting.jpg",
-    },
-    {
-      id: 5,
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMcVQceImwZ8JYf8aNQBJCCuASDZFXlJ-fc6LTmnqUO_quWrZ-42OBP7ekXo68RMSudk&usqp=CAU",
-    },
-    {
-      id: 6,
-      imageUrl:
-        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/287258513/original/4a6921c67e19052fa76bde6bf8c30769e112cf3c/write-any-thing-for-you-in-my-beautiful-handwriting.jpeg",
-    },
-    {
-      id: 7,
-      imageUrl:
-        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/338611016/original/d21a443439ca9bec60f609a70e61e47c90c21fce/do-handwriting-notes-and-letters.jpg",
-    },
-    {
-      id: 8,
-      imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGeGn_IY1Lrm-3IovpVCP63AU-6AsF9Oo-ZQ3BG8bwPOrrbrdBH9_HOzvMildoNAqmmQA&usqp=CAU",
-    },
-    {
-      id: 9,
-      imageUrl:
-        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/336620685/original/d02ae2d8d619c504fb37c377b69e240d8559fd7a/do-handwriting-notes-and-letters.jpg",
-    },
-    {
-      id: 10,
-      imageUrl:
-        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/286057779/original/e35b2ccf543b350b95a12a4c81b4c0a8708a1f31/do-handwriting-notes-and-letters.jpg",
-    },
-  ];
 
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [isDone, setIsDone] = useState(false);
@@ -184,8 +69,6 @@ const SingleChapterPreview = () => {
       },
     }));
   };
-
-  // console.log(imageStats);
 
   // Function to get current image ID (add this)
   const getCurrentImageId = () => {
@@ -255,9 +138,28 @@ const SingleChapterPreview = () => {
   // starts main content
 
   const [activeTab, setActiveTab] = useState("Extracted Text");
+  const [isEditPopupOpen, setIsEditPopupOpen] = useState(false);
+  const [isDeletePopupOpen, setIsDeletePopupOpen] = useState(false);
+  const [isDeletingImage, setIsDeletingImage] = useState(false);
+
+  const handleSaveChapter = (updatedChapter) => {
+    // Handle the save logic here
+    console.log("Updated chapter:", updatedChapter);
+  };
+
+  const handleDeleteChapter = () => {
+    // Handle the deletion logic here
+    console.log("Deleting chapter");
+    setIsDeletePopupOpen(false);
+  };
+
+  const handleDeleteImage = () => {
+    console.log("Deleting image");
+    setIsDeletingImage(false);
+  };
 
   return (
-    <div className="ml-82 mr-3 min-h-screen">
+    <div className="ml-82 mr-3 min-h-screen pb-3">
       <Navbar />
 
       {/* Main container */}
@@ -266,10 +168,11 @@ const SingleChapterPreview = () => {
         <header className="flex items-center justify-between">
           <div className="flex items-center">
             <Link
-              to={"/exam-preparation/chapters"}
-              className="text-black/90 cursor-pointer bg-white hover:bg-white/90 duration-100 p-[4px] px-[7px] rounded-md flex items-center"
+              to={"/exam-preparation/:subject/chapters"}
+              className="text-black/90 cursor-pointer bg-white hover:bg-white/90 duration-100 p-[7px] px-2 rounded-md flex items-center gap-2"
             >
-              <MdOutlineKeyboardArrowLeft className="text-2xl" />
+              <FaChevronLeft className="text-gray-800 hover:text-black duration-100" />
+              <span className="text-sm">Back</span>
             </Link>
             <span className="flex items-center pl-1">
               <MdOutlineKeyboardArrowRight className="text-xl" />
@@ -341,6 +244,7 @@ const SingleChapterPreview = () => {
               </button>
               <div className="h-6 w-[1px] bg-white/20 mx-1"></div>
               <button
+                onClick={() => setIsEditPopupOpen(true)}
                 title="Edit Chapter"
                 className="py-2 px-1 rounded-lg hover:bg-white/10 text-white/70 hover:text-white duration-100 flex items-center gap-1"
               >
@@ -348,6 +252,7 @@ const SingleChapterPreview = () => {
                 <span className="text-sm">Edit</span>
               </button>
               <button
+                onClick={() => setIsDeletePopupOpen(true)}
                 title="Delete Chapter"
                 className="py-2 px-1 rounded-lg hover:bg-white/10 text-white/70 hover:text-red-400 duration-100 flex items-center gap-1"
               >
@@ -490,9 +395,9 @@ const SingleChapterPreview = () => {
           </div>
 
           {/* container to show the extracted content, AI enhanced content and the youtube suggestions */}
-          <div className="bg-white/10 col-span-8 h-[520px] overflow-y-auto custom-scrollbar p-3 mt-1 rounded-xl">
+          <div className="bg-white/10 col-span-8 relative h-[520px] overflow-y-auto custom-scrollbar p-3 mt-1 rounded-xl">
             {/* Tabs Header */}
-            <div className="flex gap-1 mb-4 bg-black/20 p-1 rounded-lg w-fit">
+            <div className="flex absolute top-3 w-fit text-nowrap left-1/2 transform -translate-x-1/2 gap-2 mx-auto border border-white/40 mb-4 bg-black/20 p-[2px] rounded-lg">
               {[
                 "Extracted Text",
                 "Enhanced AI Notes",
@@ -501,7 +406,7 @@ const SingleChapterPreview = () => {
                 <div
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-2 rounded-lg cursor-pointer duration-100 ${
+                  className={`px-2 py-1 rounded-lg cursor-pointer duration-100 ${
                     activeTab === tab
                       ? "bg-white text-black/90"
                       : "text-white/70 hover:bg-white/10 hover:text-white"
@@ -513,7 +418,7 @@ const SingleChapterPreview = () => {
             </div>
 
             {/* Content based on active tab */}
-            <div className="mt-4 custom-scrollbar overflow-y-auto max-h-[500px]">
+            <div className="custom-scrollbar mt-14 overflow-y-auto">
               {activeTab === "Extracted Text" && (
                 <div className="prose prose-invert max-w-none">
                   <p className="whitespace-pre-wrap text-white/90">
@@ -523,7 +428,7 @@ const SingleChapterPreview = () => {
               )}
 
               {activeTab === "Enhanced AI Notes" && (
-                <div className="space-y-4">
+                <div className="space-y-2 mt-3">
                   {dummyContent.enhancedNotes.map((note, index) => (
                     <div
                       key={index}
@@ -543,25 +448,7 @@ const SingleChapterPreview = () => {
               {activeTab === "YouTube Suggestions" && (
                 <div className="grid grid-cols-3 px-3 mt-2 gap-3">
                   {dummyContent.youtubeSuggestions.map((video, index) => (
-                    <div
-                      key={index}
-                      className="bg-white/5 rounded-lg overflow-hidden border border-white/10 hover:bg-white/10 duration-200 cursor-pointer"
-                    >
-                      <img
-                        src={video.thumbnail}
-                        alt={video.title}
-                        className="w-full h-26 object-cover"
-                      />
-                      <div className="p-3">
-                        <h3 className="font-medium text-white line-clamp-2">
-                          {video.title}
-                        </h3>
-                        <div className="flex justify-between text-white/60 text-sm mt-2">
-                          <span>{video.channel}</span>
-                          <span>{video.duration}</span>
-                        </div>
-                      </div>
-                    </div>
+                    <YoutubeCard key={index} {...video} />
                   ))}
                 </div>
               )}
@@ -570,13 +457,31 @@ const SingleChapterPreview = () => {
 
           {/* container to show some next 4 chapters that may user want to see */}
           <div className="col-span-4 p-4 py-4 space-y-3 h-[520px] overflow-y-auto custom-scrollbar rounded-xl bg-white/10 mt-1">
-              <h2 className="text-xl font-medium text-white">Next Chapters</h2>
+            <h2 className="text-xl font-medium text-white">Next Chapters</h2>
             {nextChapters.map((oneChapter) => (
               <ChaptersCard key={oneChapter.id} {...oneChapter} />
             ))}
           </div>
         </div>
       </div>
+      <EditChapterPopup
+        isOpen={isEditPopupOpen}
+        onClose={() => setIsEditPopupOpen(false)}
+        chapter={{ name: "Chapter 1", image: imageData[currentIndex].imageUrl }}
+        onSave={handleSaveChapter}
+      />
+      <DeletionPopup
+        isOpen={isDeletePopupOpen}
+        onClose={() => setIsDeletePopupOpen(false)}
+        onDelete={handleDeleteChapter}
+        // Add data accordingly
+        itemName={"Chapter 1"}
+      />
+
+      {/* layer to show on the background where the popup is opened */}
+      {(isEditPopupOpen || isDeletePopupOpen || handleDeleteImage) && (
+        <div className="bg-black/60 z-20 fixed inset-0 h-screen w-screen"></div>
+      )}
     </div>
   );
 };
