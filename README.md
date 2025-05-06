@@ -49,3 +49,5 @@ If you are developing a production application, we recommend using TypeScript wi
  1. Edit the name of the chapter.
  2. Add a picture for the chapter.
  3. Save buttonn and cancel button.
+
+ For next 1 hour make this single chapter preview file modular to work properly.

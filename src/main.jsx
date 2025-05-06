@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import './styles/index.css'
 import LinkProvider from "./context/CreateLinkProvider.jsx";
 import PasswordProvider from "./context/CreatePasswordProvider.jsx";
 import App from "./App.jsx";
