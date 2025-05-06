@@ -152,6 +152,26 @@ const SingleChapterPreview = () => {
           <div className="bg-white/10 col-span-8 relative h-[520px] overflow-y-auto custom-scrollbar p-3 mt-1 rounded-xl">
             {/* Tabs Header */}
 
+            <div className="z-20 sticky top-0 w-fit flex items-center gap-2 mx-auto bg-black/70 justify-center p-1 rounded-xl">
+              {[
+                "Extracted Text",
+                "Enhanced AI Notes",
+                "YouTube Suggestions",
+              ].map((tab) => (
+                <div
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-2 py-1 rounded-lg cursor-pointer duration-100 ${
+                    activeTab === tab
+                      ? "bg-white text-black/90"
+                      : "text-white/70 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {tab}
+                </div>
+              ))}
+            </div>
+
             <EnhancedFeaturesContainer
               activeTab={activeTab}
               setActiveTab={setActiveTab}
