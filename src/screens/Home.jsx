@@ -12,8 +12,6 @@ const Home = () => {
   const { createLink } = useContext(linkContext);
   const { createPassword } = useContext(passwordContext);
 
-  console.log(createLink);
-
   return (
     <div className="ml-82 mr-3">
       <Navbar />

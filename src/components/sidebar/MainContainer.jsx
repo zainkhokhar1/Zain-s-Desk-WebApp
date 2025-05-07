@@ -9,7 +9,6 @@ import { useLocation } from "react-router-dom";
 
 const MainContainer = ({ setSelected, selected }) => {
   let { pathname } = useLocation();
-  console.log(pathname);
   const [path, setPath] = useState(pathname);
 
   useEffect(() => {

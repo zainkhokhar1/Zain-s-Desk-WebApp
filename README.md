@@ -41,13 +41,46 @@ If you are developing a production application, we recommend using TypeScript wi
  7. Show the exact details of the images in the text format.
 
  <!-- Tasks for today must done -->
- 1. Add the popups like 
- -> ARE YOU SURE TO DELETE THE CHAPTER? || Image 
-  
- --> Think about the edit section what to show on this?
- Options for now -> 
+ <!-- 1. Add the popups like  -->
+ <!-- -> ARE YOU SURE TO DELETE THE CHAPTER? || Image  -->
+
+<!--   
+  Think about the edit section what to show on this?
+ Options for now 
  1. Edit the name of the chapter.
  2. Add a picture for the chapter.
- 3. Save buttonn and cancel button.
+ 3. Save buttonn and cancel button. -->
 
- For next 1 hour make this single chapter preview file modular to work properly.
+<!-- Challenges on the frontend side of the Exam-preparation module (for now) -->
+
+1. What to show on the add new book?
+2. Where to show the edit delete etc functionalities of the books?
+3. What to show on the add new chapter?
+4. What if the user wants to add images to the existing chapter?
+5. Status like Important, and Status like completed pending are updated where on the chapters.
+
+Answer 1 :
+-> Add Name of the Subject/ Book.
+-> Add Image for the Book.
+-> Select Type (Mids , Finals).
+-> Have options to set as normal, important, medium etc.
+-> Have options to mark as pending, Remaining, Completed.
+That's it for now I think.
+
+Answer 2 :
+-> Options of edit,delete on the card like three dots on the left side and when user hovers/clicks it will show edit and delete options.
+-> Delete will show a confirmation message.
+-> Edit will show a form with already created details like Image,Name,Type (mids,finals) and he can edit this and save.
+
+Answer 3 :
+-> Name of the chapter.
+-> Image optional if he wants he can add or show the default card for the chapter.
+-> Upload multiple images through drag and drop (for now only images).
+-> Save the chapter (that's it for now).
+
+Answer 4 : 
+-> Name of the chapter will be shown (not edit-able) and he is shown a drap and drop input option or like that to add more photos and save.
+
+Answer 5 :
+-> On the edit section of the Book the user will be able to update the status of the Books.
+

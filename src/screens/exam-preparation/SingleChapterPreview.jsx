@@ -5,12 +5,12 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import dummyChapters from "../../data";
 import { dummyContent } from "../../data";
 import { imageData } from "../../data";
-import EditChapterPopup from "../../components/exam-preparation/EditChapterPopup";
-import DeletionPopup from "../../components/exam-preparation/DeletionPopup";
+import EditChapterPopup from "../../components/exam-preparation/chapter-preview/EditChapterPopup.jsx";
+import DeletionPopup from "../../components/exam-preparation/common/DeletionPopup.jsx";
 import MainImageContainer from "../../components/exam-preparation/chapter-preview/ImageContainer.jsx";
 import TotalImagesPreview from "../../components/exam-preparation/chapter-preview/TotalImagesPreview";
 import EnhancedFeaturesContainer from "../../components/exam-preparation/chapter-preview/EnhancedFeaturesContainer";
-import NextChapters from "../../components/exam-preparation/chapter-preview/NextChapters";
+import NextChapters from "../../components/exam-preparation/chapter-preview/NextChapters.jsx";
 
 // 3 next chapters to show on the container
 const nextChapters = dummyChapters.slice(1, 4);
@@ -198,7 +198,6 @@ const SingleChapterPreview = () => {
         }}
         onDelete={handleDeleteChapter}
         onImageDelete={handleDeleteImage}
-        // Add data accordingly
         itemName={isDeletingImage ? "Image 1" : "Chapter 1"}
       />
 

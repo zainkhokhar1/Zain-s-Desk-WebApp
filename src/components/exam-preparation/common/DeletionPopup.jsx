@@ -24,9 +24,9 @@ const DeletionPopup = ({
         </div>
 
         {/* Warning Header */}
-        <div className="flex items-center gap-1 mb-2">
+        <div className="flex items-start gap-1 mb-2">
           <MdWarning className="text-3xl text-red-600" />
-          <h1 className="text-xl font-semibold">Delete {itemName}</h1>
+          <h1 className="text-xl font-semibold text-wrap w-10/12">Delete {itemName}</h1>
         </div>
 
         {/* Warning Message */}
@@ -47,7 +47,7 @@ const DeletionPopup = ({
             onClick={isImageOpen ? onImageDelete : onDelete}
             className="flex-1 h-10 rounded-lg p-2 bg-red-600 hover:bg-red-700 text-white duration-200"
           >
-            Delete {itemName}
+            Delete
           </button>
         </div>
       </div>

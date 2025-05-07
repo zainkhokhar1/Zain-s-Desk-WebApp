@@ -1,5 +1,5 @@
 import React from "react";
-import YoutubeCard from "../YoutubeCard";
+import YoutubeCard from './YoutubeCard.jsx'
 
 const EnhancedFeaturesContainer = ({
   activeTab,

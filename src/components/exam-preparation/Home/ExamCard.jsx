@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBook, FaImage, FaFilePdf } from "react-icons/fa";
+import { SlOptions } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 const ExamCard = ({
@@ -11,9 +12,27 @@ const ExamCard = ({
   stats,
   priority,
   chapters,
+  isEditOpen,
+  setIsEditOpen,
+  isDeletePopupOpen,
+  setIsDeletePopupOpen,
 }) => {
+  // State for showing edit and delete options
+  const [showOptions, setShowOptions] = useState(false);
+
   // Calculate total pages from chapters
   const totalPages = chapters.reduce((sum, chapter) => sum + chapter.pages, 0);
+
+  // functions to show the delete and edit options
+  const handleDelete = () => {
+    setIsDeletePopupOpen(!isDeletePopupOpen);
+    setShowOptions(!showOptions);
+  };
+
+  const handleEdit = () => {
+    setIsEditOpen(!isEditOpen);
+    setShowOptions(!showOptions);
+  };
 
   return (
     <div className="border border-white/10 rounded-xl h-[350px] w-full p-2 bg-[#2D2D2D] relative">
@@ -25,7 +44,7 @@ const ExamCard = ({
 
       {/* Status Badge */}
       <span
-        className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium
+        className={`absolute top-4 left-4 px-2 py-1 rounded-full text-xs font-medium
         ${
           status === "Completed"
             ? "bg-green-500"
@@ -39,6 +58,32 @@ const ExamCard = ({
       >
         {status}
       </span>
+
+      {/* Options to show on the card */}
+      <span
+        className="text-base absolute top-4 p-1 px-2 bg-black/30 hover:bg-black/40 duration-200 right-4 rounded-full font-medium cursor-pointer"
+        onClick={() => setShowOptions(!showOptions)}
+      >
+        <SlOptions />
+      </span>
+
+      {/* Edit and Delete Options */}
+      {showOptions && (
+        <div className="absolute top-11 right-3 bg-[#1F1F1F]/80 border border-white/10 w-30 rounded-lg shadow-lg z-20">
+          <button
+            className="block py-[6px] px-2 text-white hover:bg-white/10 w-full text-left border border-b-white/20 border-transparent"
+            onClick={handleEdit}
+          >
+            Edit
+          </button>
+          <button
+            className="block py-[6px] px-2 text-white hover:bg-white/10 w-full text-left"
+            onClick={handleDelete}
+          >
+            Delete
+          </button>
+        </div>
+      )}
 
       <div className="flex items-start justify-between mt-2">
         <span className="flex items-start gap-2">
@@ -89,6 +134,14 @@ const ExamCard = ({
           View
         </Link>
       </div>
+
+      {/* Overlay to close the opened options */}
+      {showOptions && (
+        <div
+          className="fixed inset-0 z-10 bg-transparent"
+          onClick={() => setShowOptions(!showOptions)}
+        ></div>
+      )}
     </div>
   );
 };

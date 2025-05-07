@@ -29,7 +29,7 @@ const Controls = () => {
   );
 };
 
-const ImageContainer = ({ img, isFullScreen }) => {
+const SingleImageContainer = ({ img, isFullScreen }) => {
   return isFullScreen ? (
     <div className="h-screen w-screen relative overflow-hidden">
       <TransformWrapper
@@ -65,4 +65,4 @@ const ImageContainer = ({ img, isFullScreen }) => {
   );
 };
 
-export default ImageContainer;
+export default SingleImageContainer;

@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { BiFullscreen } from "react-icons/bi";
 import { RxExitFullScreen } from "react-icons/rx";
-import ImageContainer from "../ImageContainer.jsx";
+import SingleImageContainer from "./SingleImageContainer";
 import { MdDelete } from "react-icons/md";
 import { FaBookmark, FaCheckCircle, FaHeart } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
@@ -72,7 +72,7 @@ const MainImageContainer = ({
       <ImageGallery
         ref={galleryRef}
         renderItem={(item) => (
-          <ImageContainer img={item.original} isFullScreen={isFullScreen} />
+          <SingleImageContainer img={item.original} isFullScreen={isFullScreen} />
         )}
         onSlide={(currentIndex) => {
           setCurrentIndex(currentIndex);
