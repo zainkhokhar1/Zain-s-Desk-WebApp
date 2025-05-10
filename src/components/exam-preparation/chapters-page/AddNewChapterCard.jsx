@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { IoMdAdd } from "react-icons/io";
 import ChapterCreateContext from "../../../context/CreateChapterContext";
 import CreateChapterPopup from "./CreateChapterPopup";
-import AddNotes from "./AddNotes.jsx";
 
 const AddNewChapterCard = () => {
   const [createChapter, setCreateChapter] = useContext(ChapterCreateContext);
