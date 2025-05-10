@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import linkContext from "./CreateContext";
+import linkContext from "./CreateContext.jsx";
 
 const LinkProvider = ({children})=>{
     

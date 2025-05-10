@@ -1,7 +1,7 @@
-
-import React from "react";
+import React, { useState } from "react";
 import { FaBookmark, FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AddNotes from "./AddNotes";
 
 const ChaptersCard = ({
   title,
@@ -13,6 +13,13 @@ const ChaptersCard = ({
   bookmarked,
   completed,
 }) => {
+  // state to open and close the addnotes popup.
+  const [addNotes, setAddNotes] = useState(false);
+
+  // handler to close the opened popup
+  const handleClose = () => {
+    setAddNotes(!addNotes);
+  };
   return (
     <div className="p-3 h-86 col-span-1 group border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 duration-300 cursor-pointer">
       {/* Header / Chapter Preview */}
@@ -55,13 +62,27 @@ const ChaptersCard = ({
 
       {/* Action Buttons */}
       <div className="flex justify-between gap-2 mt-4">
-        <Link to={`/exam-preparation/:${title}/:${title}`} className="flex-1 bg-white text-black text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/90 text-center">
+        <Link
+          to={`/exam-preparation/:${title}/:${title}`}
+          className="flex-1 bg-white text-black text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/90 text-center"
+        >
           View
         </Link>
-        <button className="flex-1 bg-white/10 text-white text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/20">
+        <button
+          onClick={handleClose}
+          className="flex-1 bg-white/10 text-white text-sm py-2 rounded-md font-medium duration-200 hover:bg-white/20"
+        >
           Add Notes
         </button>
       </div>
+
+      {/* Popup to add notes to existing chapter */}
+      <AddNotes isOpen={addNotes} onClose={handleClose} />
+
+      {/* overlay to show when the popup is opened */}
+        {
+          addNotes && <div className="fixed inset-0 h-screen w-screen bg-black/60"></div>
+        }
     </div>
   );
 };

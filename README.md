@@ -1,16 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
 
 # All in One
 <!-- Naviagations for this app -->
@@ -84,3 +71,19 @@ Answer 4 :
 Answer 5 :
 -> On the edit section of the Book the user will be able to update the status of the Books.
 
+
+For the time tracker, todo and the third one which is calender feature will be the part of the todo section with three options to show different parts of it.
+
+1. I will create only one single todo and it's data will be used on both the tabs of calender and the progress tracker (total time worked) section.
+2. On the progress tracker user have to select the todo he is working on and then he will start the timer for it.He can also have other options but for now it's not the part. 
+
+<!-- For now complete the options of the frontend side of the Learning section -->
+1. What to show on the Add new Chapter?
+2. What to show on the Add Notes to existing chapter.
+
+
+Ans 1. 
+1. Name of the chapter.
+2. Image for the chapter (optional).
+3. Upload (drag and drop option for the user to upload multiple images 10,30 50 etc what so ever).
+4. Save the chaper option.

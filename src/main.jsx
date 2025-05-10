@@ -4,6 +4,7 @@ import "./styles/index.css";
 import LinkProvider from "./context/CreateLinkProvider.jsx";
 import PasswordProvider from "./context/CreatePasswordProvider.jsx";
 import CreateNewBookProvider from "./context/CreateNewBookContextProvider.jsx";
+import ChapterCreateProvider from "./context/CreateChapterProvider.jsx";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -11,7 +12,9 @@ createRoot(document.getElementById("root")).render(
     <CreateNewBookProvider>
       <LinkProvider>
         <PasswordProvider>
-          <App />
+          <ChapterCreateProvider>
+            <App />
+          </ChapterCreateProvider>
         </PasswordProvider>
       </LinkProvider>
     </CreateNewBookProvider>
