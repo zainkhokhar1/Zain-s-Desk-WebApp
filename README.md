@@ -43,36 +43,36 @@ Make the bookmark as saved and important as a separate thing in all the exam sec
 
 <!-- Challenges on the frontend side of the Exam-preparation module (for now) -->
 
-1. What to show on the add new book?
+<!-- 1. What to show on the add new book?
 2. Where to show the edit delete etc functionalities of the books?
 3. What to show on the add new chapter?
 4. What if the user wants to add images to the existing chapter?
-5. Status like Important, and Status like completed pending are updated where on the chapters.
-
+5. Status like Important, and Status like completed pending are updated where on the chapters. -->
+<!--
 Answer 1 :
 -> Add Name of the Subject/ Book.
 -> Add Image for the Book.
 -> Select Type (Mids , Finals).
 -> Have options to set as normal, important, medium etc.
 -> Have options to mark as pending, Remaining, Completed.
-That's it for now I think.
-
+That's it for now I think. -->
+<!--
 Answer 2 :
 -> Options of edit,delete on the card like three dots on the left side and when user hovers/clicks it will show edit and delete options.
 -> Delete will show a confirmation message.
--> Edit will show a form with already created details like Image,Name,Type (mids,finals) and he can edit this and save.
-
+-> Edit will show a form with already created details like Image,Name,Type (mids,finals) and he can edit this and save. -->
+<!--
 Answer 3 :
 -> Name of the chapter.
 -> Image optional if he wants he can add or show the default card for the chapter.
 -> Upload multiple images through drag and drop (for now only images).
--> Save the chapter (that's it for now).
+-> Save the chapter (that's it for now). -->
 
-Answer 4 :
--> Name of the chapter will be shown (not edit-able) and he is shown a drap and drop input option or like that to add more photos and save.
+<!-- Answer 4 :
+-> Name of the chapter will be shown (not edit-able) and he is shown a drap and drop input option or like that to add more photos and save. -->
 
-Answer 5 :
--> On the edit section of the Book the user will be able to update the status of the Books.
+<!-- Answer 5 :
+-> On the edit section of the Book the user will be able to update the status of the Books. -->
 
 <!-- For now complete the options of the frontend side of the Learning section -->
 <!-- 1. What to show on the Add new Chapter?
@@ -98,8 +98,8 @@ For the time tracker, todo and calender feature both will be the part of the tod
 
 In the bottom two containers ->
 
-1. Showing all the todo's remaining for today.
-2. Showing all the todo's that's completed before today.
+1. One container to show the today todos.
+2. 2nd one to show the todo's before today.
 
 show in the form of cards and use categories to create todo and on the todo card show different saved images on the cards based on categories.
 option to show the priority of the todo.(Important,Normal etc).
@@ -108,3 +108,21 @@ option to show the priority of the todo.(Important,Normal etc).
 
 <!-- 1. pie chart to show the comparison of the total todos and the remaining todo's.
 2. Bar chart to show the name of the category with completed and remaining comparison. -->
+
+<!-- Todos will have the following things -->
+
+1. Text
+2. Priority (High,medium,low etc).
+3. Backend will asign number to each todo by #120 or for the first it would be #1.
+4. If created today then it will show today with icon (as per UI requirement).
+5. It will show the category also with icon.
+6. Status of the todo (Pending,Completed,In Progress).
+7. start time, end time. (for calender and time tracker).
+8. created on (update on).
+9. In progress will be shown with different container stylings.
+10. Option to edit and delete the todo.
+
+<!-- UI based thinking -->
+
+1. first layer to show the id number,text, priority with three dots to show the options.
+2. status,Created today with icon, icon+category, start and end time, created at.

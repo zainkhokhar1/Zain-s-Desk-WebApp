@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CustomSelection from "../../components/productivity-tracker/todos/CustomSelection.jsx";
 import CardsContainer from "../../components/productivity-tracker/todos/CardsContainer.jsx";
 import InsightsContainer from "../../components/productivity-tracker/todos/InsightsContainer.jsx";
+import ShowTodoContainer from "../../components/productivity-tracker/todos/ShowTodoContainer.jsx";
 
 const Todos = () => {
   const [option, setOption] = useState("Today");
@@ -22,6 +23,9 @@ const Todos = () => {
 
       {/* Insights section to show the details in the charts (bar and vertically heighted) */}
       <InsightsContainer />
+
+      {/* Todos showing container */}
+      <ShowTodoContainer />
 
       {/* overlay to close the drop down */}
       {isDropdownOpen && (

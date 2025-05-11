@@ -13,7 +13,7 @@ import Main from "./screens/productivity-tracker/Main";
 
 function App() {
   return (
-    <div className="bg-black pb-2 overflow-x-hidden text-[#F0F0F0]">
+    <div className="bg-black overflow-x-hidden text-[#F0F0F0]">
       <Router>
         <Navbar />
         <Routes>

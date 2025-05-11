@@ -9,7 +9,7 @@ const Main = () => {
   const [selected, setSelected] = useState(1);
 
   return (
-    <div className="min-h-screen ml-82 mr-3">
+    <div className="min-h-screen ml-82 mr-3 overflow-hidden">
       <Navbar />
 
       <h3 className="font-medium text-2xl pt-[0.6px]">Productivity Tracker</h3>
