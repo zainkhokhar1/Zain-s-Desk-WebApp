@@ -27,6 +27,11 @@ const MainContainer = ({ setSelected, selected }) => {
       path: "/exam-preparation",
     },
     {
+      name: "Productivity Tracker",
+      icon: <LuListTodo />,
+      path: "/productiviy-tracker",
+    },
+    {
       name: "Quick Links",
       icon: <IoLinkSharp />,
       path: "/quick-links",
@@ -36,11 +41,6 @@ const MainContainer = ({ setSelected, selected }) => {
       icon: <RiLockPasswordFill />,
       path: "/password-vault",
     },
-    {
-      name: "Todos",
-      icon: <LuListTodo />,
-      path: "/todos",
-    },
   ];
 
   return (
@@ -49,10 +49,10 @@ const MainContainer = ({ setSelected, selected }) => {
         const isActive =
           // Checks if not the home path
           singleOption.path !== "/"
-            // true then it checks that either if it's starting with the any of the paths in the options array then accept that.
-            ? path.startsWith(singleOption.path)
-            // false then this
-            : path === "/";
+            ? // true then it checks that either if it's starting with the any of the paths in the options array then accept that.
+              path.startsWith(singleOption.path)
+            : // false then this
+              path === "/";
 
         return (
           <Link

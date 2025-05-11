@@ -71,14 +71,8 @@ Answer 4 :
 Answer 5 :
 -> On the edit section of the Book the user will be able to update the status of the Books.
 
-
-For the time tracker, todo and the third one which is calender feature will be the part of the todo section with three options to show different parts of it.
-
-1. I will create only one single todo and it's data will be used on both the tabs of calender and the progress tracker (total time worked) section.
-2. On the progress tracker user have to select the todo he is working on and then he will start the timer for it.He can also have other options but for now it's not the part. 
-
 <!-- For now complete the options of the frontend side of the Learning section -->
-1. What to show on the Add new Chapter?
+<!-- 1. What to show on the Add new Chapter?
 2. What to show on the Add Notes to existing chapter.
 
 
@@ -86,4 +80,28 @@ Ans 1.
 1. Name of the chapter.
 2. Image for the chapter (optional).
 3. Upload (drag and drop option for the user to upload multiple images 10,30 50 etc what so ever).
-4. Save the chaper option.
+4. Save the chaper option. -->
+
+For the time tracker, todo and calender feature both will be the part of the todo section with three options to show different parts of it.
+
+1. I will create only one single todo and it's data will be used on both the tabs of calender and the progress tracker (total time worked) section.
+2. On the progress tracker user have to select the todo he is working on and then he will start the timer for it.He can also have other options but for now it's not the part. 
+
+<!-- Design the todo page first and look for the navbar that is going to be shown on the Todos Page -->
+
+1. Create todo option
+2. Total Todo's for today.
+3. Completed todo's for today with percentage.
+
+Also show this in the pie chart.
+first two containers done till now.
+
+In the bottom two containers ->
+1. Showing all the todo's remaining for today.
+2. Showing all the todo's that's completed before today.
+
+show in the form of cards and use categories to create todo and on the todo card show different saved images on the cards based on categories.
+option to show the priority of the todo.(Important,Normal etc).
+
+
+

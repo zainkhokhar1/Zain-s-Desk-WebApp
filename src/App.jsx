@@ -5,12 +5,11 @@ import Settings from "./screens/Settings";
 import ExamPreparation from "./screens/exam-preparation/ExamPreparation";
 import QuickLinks from "./screens/QuickLinks";
 import PasswordVault from "./screens/PasswordVault";
-import Todos from "./screens/Todos";
 import Notifications from "./screens/Notifications";
 import ExpenseManagement from "./screens/ExpenseManagement";
-import LinkProvider from "./context/CreateLinkProvider";
 import Chapters from "./screens/exam-preparation/Chapters";
 import SingleChapterPreview from "./screens/exam-preparation/SingleChapterPreview";
+import Main from "./screens/productivity-tracker/Main";
 
 function App() {
   return (
@@ -23,13 +22,19 @@ function App() {
 
           {/* Exam Preparation Routes */}
           <Route path="/exam-preparation" element={<ExamPreparation />} />
-          <Route path="exam-preparation/:subject/chapters" element={<Chapters />} />
-          <Route path="exam-preparation/:subject/:chapter" element={<SingleChapterPreview />} />
+          <Route
+            path="exam-preparation/:subject/chapters"
+            element={<Chapters />}
+          />
+          <Route
+            path="exam-preparation/:subject/:chapter"
+            element={<SingleChapterPreview />}
+          />
 
           {/* Other Routes */}
           <Route path="/quick-links" element={<QuickLinks />} />
           <Route path="/password-vault" element={<PasswordVault />} />
-          <Route path="/todos" element={<Todos />} />
+          <Route path="/productiviy-tracker" element={<Main />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/expense-management" element={<ExpenseManagement />} />
           <Route path="/settings" element={<Settings />} />
