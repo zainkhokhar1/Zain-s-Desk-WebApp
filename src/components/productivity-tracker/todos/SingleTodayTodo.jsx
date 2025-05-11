@@ -36,7 +36,7 @@ const SingleTodayTodo = (props) => {
   };
 
   return (
-    <div className=" w-full flex flex-col p-3 bg-white/15 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+    <div className="relative w-full flex flex-col p-3 bg-white/15 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
       {/* First Layer */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2 text-lg font-semibold">
@@ -80,7 +80,7 @@ const SingleTodayTodo = (props) => {
 
             {/* Options Dropdown */}
             {isOptionsOpen && (
-              <div className="absolute right-4 top-2  bg-[#1C1C1E] border border-white/10 rounded-lg shadow-lg z-50 w-32 overflow-hidden">
+              <div className="absolute right-5 top-0  bg-[#1C1C1E] border border-white/10 rounded-lg shadow-lg z-50 w-32 overflow-hidden">
                 <div
                   className="px-3 py-2 text-white cursor-pointer hover:bg-white/10 border border-transparent border-b-white/10"
                   onClick={() => {
