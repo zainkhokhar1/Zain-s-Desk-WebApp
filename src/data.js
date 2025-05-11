@@ -72,31 +72,36 @@ export const dummyContent = {
       title: "Introduction to Computer Science - Harvard CS50",
       channel: "CS50",
       duration: "2:15:30",
-      thumbnail: "https://img.freepik.com/premium-psd/youtube-thumbnail-design-template_941802-3124.jpg?w=1060",
+      thumbnail:
+        "https://img.freepik.com/premium-psd/youtube-thumbnail-design-template_941802-3124.jpg?w=1060",
     },
     {
       title: "Introduction to Computer Science - Harvard CS50",
       channel: "CS50",
       duration: "2:15:30",
-      thumbnail: "https://img.freepik.com/premium-psd/extract-youtube-thumbnail-promotion-banner-design-gaming-thumbnail_941802-2744.jpg?w=1060",
+      thumbnail:
+        "https://img.freepik.com/premium-psd/extract-youtube-thumbnail-promotion-banner-design-gaming-thumbnail_941802-2744.jpg?w=1060",
     },
     {
       title: "Introduction to Computer Science - Harvard CS50",
       channel: "CS50",
       duration: "2:15:30",
-      thumbnail: "https://img.freepik.com/premium-psd/modern-red-glow-effect-youtube-channel-video-thumbnail-design_941802-2674.jpg?w=1380",
+      thumbnail:
+        "https://img.freepik.com/premium-psd/modern-red-glow-effect-youtube-channel-video-thumbnail-design_941802-2674.jpg?w=1380",
     },
     {
       title: "How Computers Work: What Makes a Computer, a Computer?",
       channel: "Code.org",
       duration: "1:15:20",
-      thumbnail: "https://img.freepik.com/free-psd/flat-design-streamer-template_23-2149831564.jpg?t=st=1746520250~exp=1746523850~hmac=1a64e58f32456b3ab33ffb6ba4f10f2456f7e31ce144ed69259cb9ac1eaceb4f&w=1380",
+      thumbnail:
+        "https://img.freepik.com/free-psd/flat-design-streamer-template_23-2149831564.jpg?t=st=1746520250~exp=1746523850~hmac=1a64e58f32456b3ab33ffb6ba4f10f2456f7e31ce144ed69259cb9ac1eaceb4f&w=1380",
     },
     {
       title: "Basics of Programming - Complete Tutorial",
       channel: "freeCodeCamp.org",
       duration: "45:30",
-      thumbnail: "https://img.freepik.com/free-psd/flat-design-streamer-template_23-2149831580.jpg?t=st=1746520262~exp=1746523862~hmac=6a876e08943fae10eb68272fc5e53a004fa3d0a43742dae918b2b52b84ef0df5&w=1380",
+      thumbnail:
+        "https://img.freepik.com/free-psd/flat-design-streamer-template_23-2149831580.jpg?t=st=1746520262~exp=1746523862~hmac=6a876e08943fae10eb68272fc5e53a004fa3d0a43742dae918b2b52b84ef0df5&w=1380",
     },
   ],
 };
@@ -1045,5 +1050,61 @@ export const todos = [
     task: "Review the pull requests from team members.",
     time: "4:15 PM",
     status: "in review",
+  },
+];
+
+export const data = [
+  // Total Todo
+  {
+    title: "Total Todos Today",
+    value: 12,
+    subtext: "Well done!",
+    percentage: "58%",
+    image: "/total-Today-Todos.png",
+    color: "#22C55E",
+    textColor: "text-[#22C55E]",
+  },
+  // Remaining Todo
+  {
+    title: "Remaining Todos",
+    value: 5,
+    subtext: "Keep going!",
+    percentage: "42%",
+    image: "/remaining.png",
+    textColor: "text-[#EF4444]",
+    color: "#EF4444",
+  },
+];
+
+export const pieChartData = [
+  { name: "Completed", value: 7 },
+  { name: "Remaining", value: 5 },
+];
+
+export const barChartData = [
+  {
+    category: "Work",
+    completed: 6,
+    remaining: 2,
+  },
+  {
+    category: "Study",
+    completed: 3,
+    remaining: 4,
+  },
+  {
+    category: "Health",
+    completed: 2,
+    remaining: 1,
+  },
+  {
+    category: "Personal",
+    completed: 4,
+    remaining: 3,
+  },
+  {
+    category: "Chores",
+    completed: 5,
+    remaining: 0,
   },
 ];

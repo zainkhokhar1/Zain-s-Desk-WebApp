@@ -3,7 +3,7 @@ import { IoAdd } from "react-icons/io5";
 
 const CreateTodo = () => {
   return (
-    <div className="w-full bg-cyan-400/10 col-span-4 h-40 rounded-xl border border-white/20 p-2 relative">
+    <div className="w-full bg-cyan-400/10 col-span-4 h-40 rounded-xl border border-white/20 p-2 relative hover:scale-102 duration-300 ease-in">
       <img
         src="../../create-todo.png"
         alt="create-img"

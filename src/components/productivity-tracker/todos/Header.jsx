@@ -45,7 +45,7 @@ const Header = ({ selected, setSelected }) => {
       </div>
 
       {/* show the date here */}
-      <div className="w-fit mb-1 shadow-xs shadow-amber-600 text-nowrap p-[5px] px-3 border-2 border-orange-300 font-medium rounded-full text-sm bg-amber-400/60">
+      <div className="w-fit mb-1 text-nowrap p-[5px] px-3 border-2 border-black/30 font-medium rounded-full text-sm bg-[#E9F44A] text-black/90">
         {date.toDateString()}
       </div>
     </div>

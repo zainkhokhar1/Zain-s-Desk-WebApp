@@ -1,38 +1,35 @@
-import React from "react";
-import Navbar from "../../components/Navbar.jsx";
-import TodoStatusCard from "../../components/productivity-tracker/main/TodoStatusCard.jsx";
-import CreateTodo from "../../components/productivity-tracker/main/CreateTodo.jsx";
-import Header from "../../components/productivity-tracker/main/Header.jsx";
+import React, { useState } from "react";
+import CustomSelection from "../../components/productivity-tracker/todos/CustomSelection.jsx";
+import CardsContainer from "../../components/productivity-tracker/todos/CardsContainer.jsx";
+import InsightsContainer from "../../components/productivity-tracker/todos/InsightsContainer.jsx";
 
-const Todos = ({ selected, setSelected }) => {
-  const data = [
-    // Total Todo
-    {
-      title: "Total Todos Today",
-      value: 12,
-      percentage: "58%",
-      image: "/total-Today-Todos.png",
-      color: "#22C55E", // Tailwind blue-500
-    },
-    // Remaining Todo
-    {
-      title: "Remaining Todos",
-      value: 5,
-      percentage: "42%",
-      image: "/remaining.png",
-      color: "#EF4444", // Tailwind amber-500
-    },
-  ];
+const Todos = () => {
+  const [option, setOption] = useState("Today");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
-    <div >
-      <Header selected={selected} setSelected={setSelected} />
+    <div>
+      {/* Custom drop down options */}
+      <CustomSelection
+        setIsDropdownOpen={setIsDropdownOpen}
+        setOption={setOption}
+        isDropdownOpen={isDropdownOpen}
+        option={option}
+      />
+
       {/* Cards container */}
-      <div className="grid grid-cols-12 gap-3 pt-2">
-        {data.map((single, index) => (
-          <TodoStatusCard key={index} data={single} />
-        ))}
-        <CreateTodo />
-      </div>
+      <CardsContainer />
+
+      {/* Insights section to show the details in the charts (bar and vertically heighted) */}
+      <InsightsContainer />
+
+      {/* overlay to close the drop down */}
+      {isDropdownOpen && (
+        <div
+          className="inset-0 absolute bg-transparent z-0"
+          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+        ></div>
+      )}
     </div>
   );
 };
