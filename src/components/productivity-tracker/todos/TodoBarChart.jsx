@@ -52,8 +52,8 @@ const TodoBarChart = ({ data }) => {
           }}
         />
 
-        <Bar radius={[8, 8, 0, 0]} dataKey="completed" fill="#BDF545" />
-        <Bar radius={[8, 8, 0, 0]} dataKey="remaining" fill="#FC4F93" />
+        <Bar radius={[8, 8, 0, 0]} dataKey="completed" fill="#E3F717" />
+        <Bar radius={[8, 8, 0, 0]} dataKey="remaining" fill="#2ACAE5" />
       </BarChart>
     </ResponsiveContainer>
   );

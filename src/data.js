@@ -1112,7 +1112,7 @@ export const barChartData = [
 export const todosData = [
   {
     id: 1,
-    text: "Fix login bug",
+    text: "Work and complete the Productivity frontend today or as soon as possible.Work hard and believe on yourself these all things are possible.",
     priority: "High",
     category: "Bug",
     status: "Pending",
@@ -1331,4 +1331,3 @@ export const todosData = [
   //   updatedOn: "2025-05-11",
   // },
 ];
-

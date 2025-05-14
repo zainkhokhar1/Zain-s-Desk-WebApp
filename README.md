@@ -92,7 +92,7 @@ For the time tracker, todo and calender feature both will be the part of the tod
 
 <!-- Design the todo page first and look for the navbar that is going to be shown on the Todos Page -->
 
-1. Create todo option
+1. Create todo option.
 2. Total Todo's for today.
 3. Remaining todo's for today with percentage.
 
@@ -111,7 +111,7 @@ option to show the priority of the todo.(Important,Normal etc).
 
 <!-- Todos will have the following things -->
 
-1. Text
+<!-- 1. Text
 2. Priority (High,medium,low etc).
 3. Backend will asign number to each todo by #120 or for the first it would be #1.
 4. If created today then it will show today with icon (as per UI requirement).
@@ -120,9 +120,42 @@ option to show the priority of the todo.(Important,Normal etc).
 7. start time, end time. (for calender and time tracker).
 8. created on (update on).
 9. In progress will be shown with different container stylings.
-10. Option to edit and delete the todo.
+10. Option to edit and delete the todo. -->
 
 <!-- UI based thinking -->
 
-1. first layer to show the id number,text, priority with three dots to show the options.
-2. status,Created today with icon, icon+category, start and end time, created at.
+<!-- 1. first layer to show the id number,text, priority with three dots to show the options.
+2. status,Created today with icon, icon+category, start and end time, created at. -->
+
+<!-- old todo card -->
+
+on the old todo card just show category, text, created on (date) and on the right top show an arrow to open full preview of the old todo
+
+<!-- Calender section UI Consideration. -->
+
+First component ->
+
+=> DateCarousel || TimelineDateSelector
+
+1. Top: Date Navigation (Horizontal Selector) eg. ← 11 12 13 Today 15 16 17 →
+   -> Active date is highlighted (e.g., Today).
+   -> Arrows scroll the date window
+   -> Can be scrollable or paginated
+   -> Clicking a date updates the task timeline below
+
+Second Component ->
+
+=> CalenderTodos.jsx
+
+1. left starting block for the time (9am to 10am) and so on... in vertical way (next will be 10 to 11am) etc...
+2. each will have the corresponding blocks with fixed height and width (exactly equals to the card) that block will show the single todo and I will map here all the todo's of that specific time.
+
+Workflow may work better in this way =>
+
+1. I will filter and create a new array for the data that will be the have the 24 hours or 12 hours data in the form division like the first one will have the data from the specific time to specific time and so on. (helpfull If I want to map and show on the corresponding containers).
+
+2. In the UI the first row in which the first left most box will show the time that maybe 9am to 10am or whenever it's starting.
+3. And so on the rows will have the next hour with corresponding rows.
+4. When user clicks on the specific card a fixed or container will be shown on the right atmost side with all the details of the todo.
+
+And the user can also move the container (may use a package for it).

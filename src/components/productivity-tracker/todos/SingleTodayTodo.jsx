@@ -38,14 +38,14 @@ const SingleTodayTodo = (props) => {
   return (
     <div className="relative w-full flex flex-col p-3 bg-white/15 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
       {/* First Layer */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2 text-lg font-semibold">
-          <span className="text-sm text-white/80">#{id}</span>
-          <h3 className="text-white font-medium">{text}</h3>
+      <div className="mb-4 break-all w-full flex items-start justify-between">
+        <div className="flex items-start gap-2 text-lg font-semibold pt-4">
+          <span className="text-sm text-white/80 text-nowrap pt-1">#{id}</span>
+          <h3 className="text-white font-normal">{text}</h3>
         </div>
 
-        <div className="relative">
-          <div className="flex items-center gap-3">
+        <div className="absolute right-4 top-2 flex items-center gap-3">
+          <div className="flex items-center gap-3 text-nowrap">
             <div className="flex gap-1">
               {priority === "High" ? (
                 <div className="flex items-center gap-1 text-orange-500">

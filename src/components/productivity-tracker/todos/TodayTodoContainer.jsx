@@ -130,7 +130,7 @@ const TodayTodoContainer = () => {
       </div>
 
       {/* Container to show the filtered todo cards */}
-      <div className="flex flex-col items-center gap-3 mt-3">
+      <div className="flex flex-col items-center gap-3 mt-3 overflow-hidden">
         {filteredTodos.map((oneData) => (
           <SingleTodayTodo key={oneData.id} {...oneData} />
         ))}

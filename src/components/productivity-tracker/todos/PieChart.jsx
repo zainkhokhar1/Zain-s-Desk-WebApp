@@ -1,7 +1,7 @@
 import React from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
-const COLORS = ["#BDF545", "#FC4F93"]; // Bright lime & pink for dark background
+const COLORS = ["#E3F717", "#2ACAE5"]; // COLORS
 
 const TodoPieChart = ({ data }) => {
   return (
@@ -13,7 +13,7 @@ const TodoPieChart = ({ data }) => {
         cx="50%"
         cy="50%"
         outerRadius={100}
-        innerRadius={45} // Added for donut effect
+        innerRadius={45} 
         label
       >
         {data.map((entry, index) => (

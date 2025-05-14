@@ -1,11 +1,10 @@
 import React from "react";
+import CalenderContainer from "../../components/productivity-tracker/calender/CalenderContainer";
 
 const Calender = () => {
   return (
     <div>
-
-
-      <div className="pt-2">Calender here</div>
+      <CalenderContainer />
     </div>
   );
 };
