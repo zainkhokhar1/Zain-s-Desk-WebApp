@@ -135,13 +135,14 @@ on the old todo card just show category, text, created on (date) and on the righ
 
 First component ->
 
-=> DateCarousel || TimelineDateSelector
+<!-- => DateCarousel || TimelineDateSelector
 
 1. Top: Date Navigation (Horizontal Selector) eg. ← 11 12 13 Today 15 16 17 →
    -> Active date is highlighted (e.g., Today).
    -> Arrows scroll the date window
    -> Can be scrollable or paginated
-   -> Clicking a date updates the task timeline below
+   -> Clicking a date updates the task timeline below -->
+
 
 Second Component ->
 
