@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeaderMonths from "./HeaderMonths";
+import CalenderTodos from "./CalenderTodos.jsx";
 
 const CalenderContainer = () => {
   const [isSelected, setIsSelected] = useState(false);
@@ -18,6 +19,9 @@ const CalenderContainer = () => {
 
       {/* Header month to show the scrollable container */}
       <HeaderMonths isSelected={isSelected} setIsSelected={setIsSelected} />
+
+      {/* calender to show the todos */}
+      <CalenderTodos />
     </div>
   );
 };
