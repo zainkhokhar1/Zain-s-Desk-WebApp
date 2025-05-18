@@ -27,9 +27,11 @@ const SingleTodo = ({status,time,task}) => {
           <span className="text-xs">{status}</span>
         </div>
 
-        {/* container to mark the todo as completed */}
+      </div>
+
+      {/* container to mark the todo as completed */}
         <div
-          className="absolute left-68"
+          className="absolute right-2"
           onClick={() => setCompletedTodo(!completedTodo)}
         >
           {completedTodo ? (
@@ -38,7 +40,6 @@ const SingleTodo = ({status,time,task}) => {
             <RiCheckboxBlankCircleLine className="text-xl text-amber-200" />
           )}
         </div>
-      </div>
 
       {/* todo task show here */}
       <div className="pt-8 line-clamp-3 pb-2">

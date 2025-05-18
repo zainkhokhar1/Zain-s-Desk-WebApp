@@ -36,7 +36,7 @@ const PasswordVaultContainer = () => {
   ];
 
   return (
-    <div className="bg-[#1C1C1C] rounded-xl border-white/5 border p-2 mb-2 flex flex-col h-fit items-start col-span-6">
+    <div className="bg-[#1C1C1C] rounded-xl border-white/5 border p-2 mb-2 flex flex-col h-fit items-start col-span-6 max-lg:order-5 lg:order-5">
       {/* Header and Search */}
       <div className="flex items-center justify-between gap-2 w-full">
         <h1 className="text-xl font-semibold ml-2">Password Vault</h1>

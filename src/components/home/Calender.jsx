@@ -62,7 +62,7 @@ const Calendar = () => {
   };
 
   return (
-    <div className="bg-[#1C1C1C] border flex flex-col border-white/5 col-span-2 rounded-xl min-h-71 p-3">
+    <div className="bg-[#1C1C1C] border flex flex-col border-white/5 lg:col-span-2 max-lg:col-span-3 rounded-xl min-h-71 p-3 max-lg:order-4 lg:order-4">
       {/* Calendar header */}
       <div className="flex items-center justify-between mb-4">
         <button onClick={handlePrevMonth} className="p-1 hover:bg-white/10 rounded-full">

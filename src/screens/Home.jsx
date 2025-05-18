@@ -14,7 +14,7 @@ const Home = () => {
   const { createPassword } = useContext(passwordContext);
 
   return (
-    <div className="ml-82 mr-3">
+    <div className="max-xl:ml-2 xl:ml-82 mr-3">
       <Navbar />
 
       {/* container for the different sections */}

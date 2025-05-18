@@ -57,7 +57,7 @@ const QuickLinks = () => {
   };
 
   return (
-    <div className="bg-[#1C1C1C] border flex flex-col border-white/5 col-span-4 rounded-xl min-h-71 p-3">
+    <div className="bg-[#1C1C1C] border max-xl:order-1 flex flex-col border-white/5 max-lg:col-span-6 lg:col-span-4 rounded-xl min-h-71 p-3 max-lg:order-1 lg:order-1">
       {/* header section */}
       <section className="flex items-center justify-between">
         <h1 className="text-xl font-semibold relative -top-2">

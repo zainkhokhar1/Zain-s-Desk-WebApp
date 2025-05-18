@@ -44,7 +44,7 @@ const MainContainer = ({ setSelected, selected }) => {
   ];
 
   return (
-    <div className="flex flex-col items-start gap-[4px] bg-[#1C1C1E] min-h-fit min-w-72 border-[1px] border-[#2C2C2C] rounded-xl px-2 py-3">
+    <div className="flex flex-col items-start gap-[4px] bg-[#1C1C1E] min-h-fit min-w-72 border-[1px] border-[#2C2C2C] rounded-xl px-2 py-3 max-xl:hidden xl:visible">
       {options.map((singleOption, index) => {
         const isActive =
           // Checks if not the home path

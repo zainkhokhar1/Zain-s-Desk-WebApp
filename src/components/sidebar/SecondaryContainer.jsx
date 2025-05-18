@@ -30,7 +30,7 @@ const SecondaryContainer = ({setSelected, selected}) => {
   ];
 
   return (
-    <div className="flex flex-col items-start gap-[4px] bg-[#1C1C1E] min-h-fit w-72 border-[1px] border-[#2C2C2C] rounded-xl px-2 py-3 mt-3">
+    <div className="flex flex-col items-start gap-[4px] bg-[#1C1C1E] min-h-fit w-72 border-[1px] border-[#2C2C2C] rounded-xl px-2 py-3 mt-3 max-xl:hidden xl:visible">
       {options2.map((singleOption, index) => {
         const optionIndex = index + 6; // Starting from 6 since MainContainer uses 1-5
         return (

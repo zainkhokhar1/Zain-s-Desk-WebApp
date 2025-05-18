@@ -16,7 +16,7 @@ const ExamPrepration = () => {
   });
 
   return (
-    <div className="size-full col-span-4 h-[400px]">
+    <div className="size-full max-lg:col-span-6 lg:col-span-4 h-[400px] lg:order-3 max-lg:order-2">
       <div className="bg-[#1C1C1C] rounded-xl border-white/5 border h-full p-2">
         {/* header */}
         <div className="flex flex-row items-start justify-between w-full h-fit">
